@@ -12,7 +12,11 @@
       "dest": "/api/$1"
     },
     {
-      "src": "/(?!api/|[^/]+\\.[a-z0-9]+$).*",
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
+    },
+    {
+      "src": "/(?!api|assets)[^.]*(?:[^.]*)?$",
       "dest": "/index.html"
     }
   ]
